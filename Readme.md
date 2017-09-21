@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анастасия Пуртова](https://up.htmlacademy.ru/adaptive/12/user/222928).
-* Наставник: `Неизвестно`.
+* Наставник: `Без наставника`.
 
 ---
 
