@@ -8,25 +8,38 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a href="#" class="page-header__logo-img"><img src="http://placehold.it/150x100" height="" width="" alt="logo" /></a>
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню></button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list  site-list">
-              <li class="site-list__item  site-list__item--active">
-                <a href="index.html">ГЛАВНАЯ</a>
-              </li>
-              <li class="site-list__item">
-                <a href="photo.html">ФОТОГРАФИИ</a>
-              </li>
-              <li class="site-list__item">
-                <a href="form.html">КОНКУРС</a>
-              </li>
-              <li class="site-list__item">
-                <a href="#">HTML ACADEMY</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="main-nav__wrapper">
+            <li class="main-nav__item">
+              <ul class="main-nav__header">
+                <li>
+                  <a href="#" class="main-nav__header-logo">
+                    <span class="main-nav__header-icon"></span>
+                    <img src="img/logo-pink-white-mobile.svg" height="25" width="70" alt="logo" />
+                  </a>
+                </li>
+                <li>
+                  <button class="toggle" type="button">Открыть меню</button>
+                </li>
+              </ul>
+            </li>
+            <li class="site-list">
+              <ul class="site-list__wrapper">
+                <li class="site-list__item  site-list__item--active">
+                  <a>ГЛАВНАЯ</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="photo.html">ФОТОГРАФИИ</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="form.html">КОНКУРС</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="#">HTML ACADEMY</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -34,68 +47,71 @@
       <div class="page-main__wrapper">
         <h1 class="visually-hidden">PINK</h1>
 
-        <div class="promo">
-          <div class="promo__img"></div>
-          <p class="promo__img-text">Конкурс на самое безбашенное путешествие с Пинк</p>
+        <div class="promo-photo">
+          <span class="promo-photo__text">Конкурс на самое безбашенное путешествие с Пинк</span>
+        </div>
+        <div class="photo-text  photo-text--whitebgr">
+          <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
         </div>
 
         <div class="main-form">
           <div class="main-form__wrapper">
             <form class="main-form__form">
               <fieldset class="main-form__form-wrapper">
-                <legend class="main-form__subtitle">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</legend>
                 <label class="main-form__text-label" for="surname">
                   ФАМИЛИЯ:
-                  <input type="text" name="surname" class="main-form__text-input" placeholder="Укажите фамилию *">
                 </label>
+                <input type="text" name="surname" class="main-form__text-input" placeholder="Укажите фамилию *">
                 <label class="main-form__text-label" for="name">
                   ИМЯ:
-                  <input type="text" name="name" class="main-form__text-input" placeholder="Укажите ваше имя *">
                 </label>
+                <input type="text" name="name" class="main-form__text-input" placeholder="Укажите ваше имя *">
                 <label class="main-form__text-label" for="fatherName">
                   ОТЧЕСТВО:
-                  <input type="text" name="fatherName" class="main-form__text-input" placeholder="Ну и отчество тоже">
                 </label>
+                <input type="text" name="fatherName" class="main-form__text-input" placeholder="Ну и отчество тоже">
               </fieldset>
               <fieldset class="main-form__form-wrapper  main-form__form-wrapper--grey">
-                <legend class="main-form__title">Ваши безбашенные достижения в путешествии</legend>
+                <div class="main-form__title">Ваши безбашенные достижения в путешествии</div>
                 <label class="main-form__checkbox-label" for="selfi">
                   Сделал селфи с акулой
-                  <input type="checkbox" name="selfi" value="selfi" class="main-form__checkbox-input" checked>
                 </label>
+                <input type="checkbox" name="selfi" value="selfi" class="main-form__checkbox-input" checked>
                 <label class="main-form__checkbox-label" for="beach">
                   Обгорел на пляже
-                  <input type="checkbox" name="beach" value="beach" class="main-form__checkbox-input" checked>
                 </label>
+                <input type="checkbox" name="beach" value="beach" class="main-form__checkbox-input" checked>
                 <label class="main-form__checkbox-label" for="norris">
                   Видел Чака Норриса
-                  <input type="checkbox" name="norris" value="norris" class="main-form__checkbox-input">
                 </label>
+                <input type="checkbox" name="norris" value="norris" class="main-form__checkbox-input">
                 <label class="main-form__checkbox-label" for="souvenir">
                   Накупил сувениров
-                  <input type="checkbox" name="souvenir" value="souvenir" class="main-form__checkbox-input">
                 </label>
+                <input type="checkbox" name="souvenir" value="souvenir" class="main-form__checkbox-input">
                 <label class="main-form__checkbox-label" for="town">
                   Удержал башню
-                  <input type="checkbox" name="town" value="town" class="main-form__checkbox-input" checked>
                 </label>
+                <input type="checkbox" name="town" value="town" class="main-form__checkbox-input" checked>
                 <label class="main-form__checkbox-label" for="hotel">
                   Разгромил отель
-                  <input type="checkbox" name="hotel" value="hotel" class="main-form__checkbox-input">
                 </label>
+                <input type="checkbox" name="hotel" value="hotel" class="main-form__checkbox-input">
               </fieldset>
               <fieldset class="main-form__form-wrapper">
                 <label class="main-form__text-label" for="tel">
                   НОМЕР ТЕЛЕФОНА:
-                  <input type="tel" name="tel" class="main-form__text-input" placeholder="Номер, пожалуйста">
                 </label>
+                <input type="tel" name="tel" class="main-form__text-input" placeholder="Номер, пожалуйста">
+
                 <label class="main-form__text-label" for="email">
                   АДРЕС ПОЧТЫ:
-                  <input type="email" name="email" class="main-form__text-input" placeholder="Введите почту *">
                 </label>
+                <input type="email" name="email" class="main-form__text-input" placeholder="Введите почту *">
+
               </fieldset>
               <fieldset class="main-form__form-wrapper  main-form__form-wrapper--grey">
-                <legend class="main-form__title">С каким приложением путешествовали?</legend>
+                <div class="main-form__title">С каким приложением путешествовали?</div>
                 <label class="main-form__radio-label" for="iOS">
                   Pink для iOS
                   <input type="radio" name="iOS" value="iOS" class="main-form__radio-input" checked>
@@ -110,7 +126,7 @@
                 </label>
               </fieldset>
               <fieldset class="main-form__form-wrapper">
-                <legend class="main-form__title">Опишите свои эмоции</legend>
+                <div class="main-form__title">Опишите свои эмоции</div>
                 <label class="main-form__textarea-label" for="comment">
                   <input type="textarea" name="comment" class="main-form__textarea-input" placeholder="Можно прям в красках, не стесняясь в выражениях">
                 </label>
@@ -124,13 +140,15 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <img class="page-footer__logo" src="http://placehold.it/150x100" />
+        <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" alt="logo-pink" />
         <ul class="social-list">
-          <li class="social-list__item"><a href="#">Twitter</a></li>
-          <li class="social-list__item"><a href="#">Facebook</a></li>
-          <li class="social-list__item"><a href="#">Youtube</a></li>
+          <li class="social-list__item  social-list__item--tw"><a href="#">Twitter</a></li>
+          <li class="social-list__item  social-list__item--fb"><a href="#">Facebook</a></li>
+          <li class="social-list__item  social-list__item--you"><a href="#">Youtube</a></li>
         </ul>
-        <div class="copyright"><a href="#"></a></div>
+        <div class="copyright">
+          <a href="#" class="copyright__logo">Разработано</a>
+        </div>
       </div>
     </footer>
   </body>

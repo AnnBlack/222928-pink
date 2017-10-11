@@ -1,0 +1,15 @@
+.page-footer--main {
+  display: none;
+
+  @media screen and (min-width: $tablet-screen) {
+    display: block;
+  }
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  margin: 0 auto;
+}

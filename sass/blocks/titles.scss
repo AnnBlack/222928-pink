@@ -1,0 +1,36 @@
+.titles__wrapper {
+  padding-top: 11px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.titles__text {
+  text-align: center;
+  font-size: 24px;
+  color: $main-blue;
+
+  @media screen and (min-width: $tablet-screen) {
+    font-size: 40px;
+    font-weight: lighter;
+  }
+
+  @media screen and (min-width: $tablet-screen) {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: $tablet-screen) {
+  .titles__text:last-child {
+    width: 60%;
+    margin-top: -30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: $tablet-screen) {
+  .titles__text:last-child {
+    width: 50%;
+  }
+}

@@ -8,25 +8,38 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a href="#" class="page-header__logo-img"><img src="http://placehold.it/150x100" height="" width="" alt="logo" /></a>
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню></button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list  site-list">
-              <li class="site-list__item  site-list__item--active">
-                <a href="index.html">ГЛАВНАЯ</a>
-              </li>
-              <li class="site-list__item">
-                <a>ФОТОГРАФИИ</a>
-              </li>
-              <li class="site-list__item">
-                <a href="form.html">КОНКУРС</a>
-              </li>
-              <li class="site-list__item">
-                <a href="#">HTML ACADEMY</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="main-nav__wrapper">
+            <li class="main-nav__item">
+              <ul class="main-nav__header">
+                <li>
+                  <a href="#" class="main-nav__header-logo">
+                    <span class="main-nav__header-icon"></span>
+                    <img src="img/logo-pink-white-mobile.svg" height="25" width="70" alt="logo" />
+                  </a>
+                </li>
+                <li>
+                  <button class="toggle" type="button">Открыть меню</button>
+                </li>
+              </ul>
+            </li>
+            <li class="site-list">
+              <ul class="site-list__wrapper">
+                <li class="site-list__item  site-list__item--active">
+                  <a>ГЛАВНАЯ</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="photo.html">ФОТОГРАФИИ</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="form.html">КОНКУРС</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="#">HTML ACADEMY</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -34,87 +47,102 @@
       <div class="page-main__wrapper">
         <h1 class="visually-hidden">PINK</h1>
 
-        <div class="promo">
-          <div class="promo__img"></div>
-          <p class="promo__img-text">Фотографии пользователей</p>
+        <div class="promo-photo">
+          <span class="promo-photo__text">Фотографии пользователей</span>
         </div>
 
-        <div class="photo-text-promo">
+        <div class="photo-text">
           <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         </div>
 
         <div class="photo-gallery">
           <div class="photo-gallery__main">
-            <img class="photo-gallery__main-img" src="http://placehold.it/150x100" />
-            <span class="photo-gallery__main-note">ПАНОРАМА ДНЯ</span>
+            <div class="photo-gallery__main-wrapper">
+              <img class="photo-gallery__main-img" src="img/panorama-mobile@1x.jpg" alt="gallery-pic-main" />
+              <span class="photo-gallery__main-note">ПАНОРАМА ДНЯ</span>
+            </div>
           </div>
           <div class="photo-gallery__wrapper">
             <ul class="photo-gallery__list">
               <li class="photo-gallery__item">
-                <span class="photo-gallery__name">Анна</span>
-                <span class="photo-gallery__time">(5 МИН НАЗАД)</span>
-                <p class="photo-gallery__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-                <span class="photo-gallery__like">НРАВИТСЯ: 215</span>
+                <div class="photo-gallery__content">
+                  <span class="photo-gallery__name">Анна</span>
+                  <span class="photo-gallery__time">(5 МИН НАЗАД)</span>
+                  <p class="photo-gallery__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                  <span class="photo-gallery__like">НРАВИТСЯ: 215</span>
+                </div>
               </li>
 
               <li class="photo-gallery__item">
-                <img class="photo-gallery__img" src="http://placehold.it/150x100" />
-                <span class="photo-gallery__name">Левон</span>
-                <span class="photo-gallery__time">(5 ЧАСОВ НАЗАД)</span>
-                <p class="photo-gallery__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                <span class="photo-gallery__like">НРАВИТСЯ: 356</span>
+                <img class="photo-gallery__img" src="img/photo-car-mobile@1x.jpg" alt="gallery-pic-first"/>
+                <div class="photo-gallery__content">
+                  <span class="photo-gallery__name">Левон</span>
+                  <span class="photo-gallery__time">(5 ЧАСОВ НАЗАД)</span>
+                  <p class="photo-gallery__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                  <span class="photo-gallery__like">НРАВИТСЯ: 356</span>
+                </div>
               </li>
 
               <li class="photo-gallery__item">
-                <img class="photo-gallery__img" src="http://placehold.it/150x100" />
-                <span class="photo-gallery__name">Антон</span>
-                <span class="photo-gallery__time">(12 ЧАСОВ НАЗАД)</span>
-                <p class="photo-gallery__comment">Соседи будут рады!</p>
-                <span class="photo-gallery__like">НРАВИТСЯ: 666</span>
+                <img class="photo-gallery__img" src="img/photo-drumset-mobile@1x.jpg" alt="photo-drumset-mobile@1x.jpg" />
+                <div class="photo-gallery__content">
+                  <span class="photo-gallery__name">Антон</span>
+                  <span class="photo-gallery__time">(12 ЧАСОВ НАЗАД)</span>
+                  <p class="photo-gallery__comment">Соседи будут рады!</p>
+                  <span class="photo-gallery__like">НРАВИТСЯ: 666</span>
+                </div>
               </li>
 
               <li class="photo-gallery__item">
-                <img class="photo-gallery__img" src="http://placehold.it/150x100" />
-                <span class="photo-gallery__name">Борис</span>
-                <span class="photo-gallery__time">(20 ЧАСОВ НАЗАД)</span>
-                <p class="photo-gallery__comment">Здесь могла быть ваша цитата о великом и вечном.</p>
-                <span class="photo-gallery__like">НРАВИТСЯ: 215</span>
+                <img class="photo-gallery__img" src="img/photo-window-mobile@1x.jpg" alt="photo-window-mobile@1x.jpg" />
+                <div class="photo-gallery__content">
+                  <span class="photo-gallery__name">Борис</span>
+                  <span class="photo-gallery__time">(20 ЧАСОВ НАЗАД)</span>
+                  <p class="photo-gallery__comment">Здесь могла быть ваша цитата о великом и вечном.</p>
+                  <span class="photo-gallery__like">НРАВИТСЯ: 215</span>
+                </div>
               </li>
 
               <li class="photo-gallery__item">
-                <img class="photo-gallery__img" src="http://placehold.it/150x100" />
-                <span class="photo-gallery__name">Сергей</span>
-                <span class="photo-gallery__time">(25 ЧАСОВ НАЗАД)</span>
-                <p class="photo-gallery__comment">Самая кубанская в мире!</p>
-                <span class="photo-gallery__like">НРАВИТСЯ: 4</span>
+                <img class="photo-gallery__img" src="img/photo-fair-mobile@1x.jpg" alt="photo-fair-mobile@1x.jpg" />
+                <div class="photo-gallery__content">
+                  <span class="photo-gallery__name">Сергей</span>
+                  <span class="photo-gallery__time">(25 ЧАСОВ НАЗАД)</span>
+                  <p class="photo-gallery__comment">Самая кубанская в мире!</p>
+                  <span class="photo-gallery__like">НРАВИТСЯ: 4</span>
+                </div>
               </li>
 
               <li class="photo-gallery__item">
-                <img class="photo-gallery__img" src="http://placehold.it/150x100" />
-                <span class="photo-gallery__name">Максим</span>
-                <span class="photo-gallery__time">(40 ЧАСОВ НАЗАД)</span>
-                <p class="photo-gallery__comment">Где снег-то?</p>
-                <span class="photo-gallery__like">НРАВИТСЯ: 150</span>
+                <img class="photo-gallery__img" src="img/photo-pov-mobile@1x.jpg" alt="photo-pov-mobile@1x.jpg" />
+                <div class="photo-gallery__content">
+                  <span class="photo-gallery__name">Максим</span>
+                  <span class="photo-gallery__time">(40 ЧАСОВ НАЗАД)</span>
+                  <p class="photo-gallery__comment">Где снег-то?</p>
+                  <span class="photo-gallery__like">НРАВИТСЯ: 150</span>
+                </div>
               </li>
 
               <li class="photo-gallery__item">
-                <img class="photo-gallery__img" src="http://placehold.it/150x100" />
-                <span class="photo-gallery__name">Надежда</span>
-                <span class="photo-gallery__time">(45 ЧАСОВ НАЗАД)</span>
-                <p class="photo-gallery__comment">Всем GM и взаимные лайки!</p>
-                <span class="photo-gallery__like">НРАВИТСЯ: 2560</span>
+                <img class="photo-gallery__img" src="img/photo-wing-mobile@1x.jpg" alt="photo-wing-mobile@1x.jpg" />
+                <div class="photo-gallery__content">
+                  <span class="photo-gallery__name">Надежда</span>
+                  <span class="photo-gallery__time">(45 ЧАСОВ НАЗАД)</span>
+                  <p class="photo-gallery__comment">Всем GM и взаимные лайки!</p>
+                  <span class="photo-gallery__like">НРАВИТСЯ: 2560</span>
+                </div>
               </li>
             </ul>
           </div>
         </div>
 
-        <div class="photo-text-promo">
+        <div class="photo-text  photo-text--whitebgr">
           <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
         </div>
 
         <div class="photo-editor">
           <div class="photo-editor__wrapper">
-            <img class="photo-editor__img" src="http://placehold.it/150x100" />
+            <img class="photo-editor__img" src="img/photo-road-mobile@1x.jpg" alt="photo-road-mobile@1x.jpg" />
             <span class="photo-editor__crop"></span>
             <span class="photo-editor__light"></span>
             <span class="photo-editor__saturation"></span>
@@ -126,13 +154,15 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <img class="footer__logo" src="http://placehold.it/150x100" />
+        <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" alt="logo-pink" />
         <ul class="social-list">
-          <li class="social-list__item"><a href="#">Twitter</a></li>
-          <li class="social-list__item"><a href="#">Facebook</a></li>
-          <li class="social-list__item"><a href="#">Youtube</a></li>
+          <li class="social-list__item  social-list__item--tw"><a href="#">Twitter</a></li>
+          <li class="social-list__item  social-list__item--fb"><a href="#">Facebook</a></li>
+          <li class="social-list__item  social-list__item--you"><a href="#">Youtube</a></li>
         </ul>
-        <div class="copyright"><a href="#"></a></div>
+        <div class="copyright">
+          <a href="#" class="copyright__logo">Разработано</a>
+        </div>
       </div>
     </footer>
   </body>

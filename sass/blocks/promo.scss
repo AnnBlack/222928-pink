@@ -1,30 +1,116 @@
-.promo__img {
+.promo {
+  position: relative;
+  min-height: 350px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: -170px 10px;
 
+  @media screen and (min-width: $tablet-screen) {
+    background-size: 150%;
+    padding: 0 20px;
+  }
 }
+
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $large-screen) {
+    width: 960px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}
+
+.promo__wrapper::before {
+  content: " ";
+  width: 100%;
+  height: 430px;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 20px 150px;
+
+  @media screen and (min-width: $tablet-screen) {
+    height: 500px;
+    background-size: 45%;
+    background-position: 350px 150px;
+  }
+}
+
+.promo__text {
+  display: none;
+
+  @media screen and (min-width: $tablet-screen) {
+    display: block;
+    width: 300px;
+    position: absolute;
+    top: 170px;
+
+    font-size: 40px;
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+  }
+}
+
 .promo-download {
+  background-color: $promo-bgr;
 
+  @media screen and (min-width: $tablet-screen) {
+    background-color: rgba(226, 222, 255, 0);
+    width: 300px;
+    margin-top: -150px;
+  }
 }
+
 .promo-download__wrapper {
-
+  padding: 20px;
 }
+
 .promo-download__btn {
-
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid white;
+  border-radius: 40px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bolder;
 }
+
 .promo-download__list {
-
+  display: flex;
+  padding: 0;
+  justify-content: center;
 }
+
 .promo-download__item {
-
+  width: 50px;
+  height: 60px;
+  padding-right: 20px;
+  background-repeat: no-repeat;
+  font-size: 0;
 }
+
 .promo-download__item--ios {
-
+  background-image: url("../img/logo-apple.svg");
+  background-size: 55%;
 }
+
 .promo-download__item--android {
-
+  background-image: url("../img/logo-android.svg");
 }
+
 .promo-download__item--windows {
-
+  background-image: url("../img/logo-microsoft.svg");
 }
-.promo-download__text {
 
+.promo-download__text {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: grey;
+  text-align: center;
 }

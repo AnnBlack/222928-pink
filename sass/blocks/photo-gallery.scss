@@ -1,0 +1,42 @@
+.photo-gallery__main {
+  width: 100%;
+}
+
+.photo-gallery__main-wrapper {
+  position: relative;
+}
+
+.photo-gallery__main-note {
+  width: 140px;
+  height: 35px;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bolder;
+  line-height: 30px;
+  background-color: $main-pink;
+  box-sizing: border-box;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+
+.photo-gallery__wrapper {
+  padding: 0 20px;
+}
+
+.photo-gallery__item {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.photo-gallery__img {
+  margin-bottom: 0;
+}
+
+.photo-gallery__content {
+  padding: 20px;
+  background-color: $white-grey;
+}
