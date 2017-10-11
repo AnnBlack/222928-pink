@@ -1,16 +1,19 @@
 .contacts__wrapper {
   padding-top: 10px;
   padding-bottom: 10px;
+
   @media screen and (min-width: $large-screen) {
     margin: 0 auto;
     width: 960px;
   }
 }
+
 .contacts__title {
   text-align: center;
   font-size: 24px;
   color: $main-blue;
 }
+
 .contacts__list {
   display: flex;
   flex-direction: column;
@@ -22,6 +25,7 @@
     flex-wrap: wrap;
   }
 }
+
 .contacts__item {
   @media screen and (min-width: $phone-screen) {
     margin-right: 40px;
@@ -29,6 +33,7 @@
     margin-bottom: 20px;
   }
 }
+
 .contacts__text {
   display: block;
   font-size: 18px;
@@ -36,6 +41,7 @@
   color: $main-blue;
   text-align: center;
 }
+
 .contacts__link {
   display: block;
   font-size: 24px;

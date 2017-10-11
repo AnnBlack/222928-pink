@@ -1,18 +1,18 @@
-.main-form__wrapper {
-
-}
 .main-form__subtitle {
   font-size: 14px;
   text-align: center;
 }
+
 .main-form__form-wrapper {
   padding: 20px;
   border: none;
   margin-bottom: 20px;
 }
+
 .main-form__form-wrapper--grey {
   background-color: $white-grey;
 }
+
 .main-form__title {
   display: block;
   text-align: center;
@@ -20,6 +20,7 @@
   color: $main-pink;
   padding-bottom: 20px;
 }
+
 .main-form__text-label {
   display: block;
   width: 100%;
@@ -28,6 +29,7 @@
   text-transform: uppercase;
   margin-left: 20px;
 }
+
 .main-form__text-input {
   width: 260px;
   height: 40px;
@@ -37,6 +39,7 @@
   margin-bottom: 20px;
   font-size: 14px;
 }
+
 .main-form__textarea-input {
   font-size: 18px;
   width: 250px;
@@ -45,6 +48,7 @@
   min-height: 200px;
   border: 1px solid $white-grey;
 }
+
 .main-form__button {
   display: block;
   width: 280px;

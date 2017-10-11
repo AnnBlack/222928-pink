@@ -6,12 +6,13 @@
   @media screen and (min-width: $phone-screen) {
     width: 100%;
   }
-
 }
+
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
   width: 100%;
+
   @media screen and (min-width: $large-screen) {
     width: 960px;
     padding: 0 20px;
