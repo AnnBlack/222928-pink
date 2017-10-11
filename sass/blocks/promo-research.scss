@@ -1,0 +1,34 @@
+.promo-research {
+  @media screen and (min-width: $large-screen) {
+    background-color: $white-grey;
+  }
+}
+.promo-research__content {
+  @media screen and (min-width: $tablet-screen) {
+    width: 300px;
+  }
+}
+.promo-research__wrapper {
+  display: none;
+
+  @media screen and (min-width: $tablet-screen) {
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px;
+  }
+  @media screen and (min-width: $large-screen) {
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 960px;
+  }
+}
+.promo-research__icon {
+  @media screen and (min-width: $tablet-screen) {
+    display: block;
+    width: 238px;
+    height: 276px;
+    background-image: url('../img/24.svg');
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+}

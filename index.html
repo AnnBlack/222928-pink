@@ -8,25 +8,38 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a href="#" class="page-header__logo-img"><img src="http://placehold.it/150x100" height="" width="" alt="logo" /></a>
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list  site-list">
-              <li class="site-list__item  site-list__item--active">
-                <a>ГЛАВНАЯ</a>
-              </li>
-              <li class="site-list__item">
-                <a href="photo.html">ФОТОГРАФИИ</a>
-              </li>
-              <li class="site-list__item">
-                <a href="form.html">КОНКУРС</a>
-              </li>
-              <li class="site-list__item">
-                <a href="#">HTML ACADEMY</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="main-nav__wrapper">
+            <li class="main-nav__item">
+              <ul class="main-nav__header">
+                <li>
+                  <a href="#" class="main-nav__header-logo">
+                    <span class="main-nav__header-icon"></span>
+                    <img src="img/logo-pink-white-mobile.svg" height="25" width="70" alt="logo" />
+                  </a>
+                </li>
+                <li>
+                  <button class="toggle" type="button">Открыть меню</button>
+                </li>
+              </ul>
+            </li>
+            <li class="site-list">
+              <ul class="site-list__wrapper">
+                <li class="site-list__item  site-list__item--active">
+                  <a>ГЛАВНАЯ</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="photo.html">ФОТОГРАФИИ</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="form.html">КОНКУРС</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="#">HTML ACADEMY</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -35,28 +48,31 @@
         <h1 class="visually-hidden">PINK</h1>
 
         <div class="promo">
-          <div class="promo__img"></div>
-          <div class="promo-download">
-            <div class="promo-download__wrapper">
-              <a href="#" class="promo-download__btn">Скачать</a>
-              <ul class="promo-download__list">
-                <li class="promo-download__item  promo-download__item--ios">
-                  <a href="#">ios</a>
-                </li>
-                <li class="promo-download__item  promo-download__item--android">
-                  <a href="#">Android</a>
-                </li>
-                <li class="promo-download__item  promo-download__item--windows">
-                  <a href="#">Windows</a>
-                </li>
-              </ul>
-              <p class="promo-download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <div class="promo__wrapper">
+            <span class="promo__text">Взгляните на&nbsp;жизнь иначе!</span>
+            <!-- <div class="promo__img"></div> -->
+            <div class="promo-download">
+              <div class="promo-download__wrapper">
+                <a href="#" class="promo-download__btn">Скачать приложение</a>
+                <ul class="promo-download__list">
+                  <li class="promo-download__item  promo-download__item--ios">
+                    <a href="#">ios</a>
+                  </li>
+                  <li class="promo-download__item  promo-download__item--android">
+                    <a href="#">Android</a>
+                  </li>
+                  <li class="promo-download__item  promo-download__item--windows">
+                    <a href="#">Windows</a>
+                  </li>
+                </ul>
+                <p class="promo-download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="titles">
-          <div class="titles_wrapper">
+          <div class="titles__wrapper">
             <p class="titles__text">Устали от серости мегаполиса?</p>
             <p class="titles__text">Нам есть, что вам предложить!</p>
           </div>
@@ -78,29 +94,54 @@
                 <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
               </li>
             </ul>
-            <img class="features__image" src="http://placehold.it/150x100" />
           </div>
         </div>
-
+        <div class="promo-research">
+          <div class="promo-research__wrapper">
+            <span class="promo-research__icon"></span>
+            <div class="promo-research__content">
+              <span class="promo-research__title">Эффект на 24 часа!</span>
+              <p class="promo-research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+              <a class="promo-research__link">Узнать больше об исследовании</a>
+            </div>
+          </div>
+        </div>
         <div class="feedback">
           <div class="feedback__wrapper">
             <input type="radio" name="point" id="slide1">
             <input type="radio" name="point" id="slide2" checked>
             <input type="radio" name="point" id="slide3">
-            <ul class="feedback__list">
-              <li class="feedback__item">
-                <p class="feedback__name">Николай Петров</p>
-                <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              </li>
-              <li class="feedback__item">
-                <p class="feedback__name">Николай Петров</p>
-                <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              </li>
-              <li class="feedback__item">
-                <p class="feedback__name">Николай Петров</p>
-                <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              </li>
-            </ul>
+
+            <div class="slider">
+              <div class="slides  slide1">
+                <div class="feedback__list-wrapper">
+                  <div class="feedback__item">
+                    <span class="feedback__name">Николай Петров</span>
+                    <span class="feedback__title">25 лет, водитель трамвая</span>
+                    <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                  </div>
+                </div>
+              </div>
+              <div class="slides  slide2">
+                <div class="feedback__list-wrapper">
+                  <div class="feedback__item">
+                    <span class="feedback__name">Дмитрий Петров</span>
+                    <span class="feedback__title">25 лет, водитель трамвая</span>
+                    <p class="feedback__text">«Это приложение перевернуло мой мир и пь на привычные серые вещи! А еще я своей будущей женой в комментариях к выложенной фотографии!»</p>
+                  </div>
+                </div>
+              </div>
+              <div class="slides slide3">
+                <div class="feedback__list-wrapper">
+                  <div class="feedback__item">
+                    <span class="feedback__name">Роман Петров</span>
+                    <span class="feedback__title">25 лет, водитель трамвая</span>
+                    <p class="feedback__text">«Это приложение перевернуло мой мир и позволил</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="controls">
               <label for="slide1"></label>
               <label for="slide2"></label>
@@ -108,26 +149,62 @@
             </div>
           </div>
         </div>
+
         <div class="price-table">
           <div class="price-table__wrapper">
-            <ul class="price-table__list">
-              <li class="price-table__item  price-table__item--main">
-                <span class="price-table__title">Стандарт</span>
-                <span class="price-table__price">3,99 USD</span>
-              </li>
-              <li class="price-table__item">
-                <span class="price-table__text">Розовый фильтр</span>
-                <span class="price-table__icon  price-table__icon--done"></span>
-              </li>
-              <li class="price-table__item">
-                <span class="price-table__text">Смайлики</span>
-                <span class="price-table__icon  price-table__icon--done"></span>
-              </li>
-              <li class="price-table__item">
-                <span class="price-table__text">Комментарии</span>
-                <span class="price-table__icon  price-table__icon--error"></span>
-              </li>
-            </ul>
+            <table>
+              <tr class="price-table__header">
+                <th></th>
+                <th class="price-table__item  price-table__item--main">
+                  <span class="price-table__title">База</span>
+                  <span class="price-table__price">1,99 USD</span>
+                </th>
+                <th class="price-table__item  price-table__item--main">
+                  <span class="price-table__title">Стандарт</span>
+                  <span class="price-table__price">3,99 USD</span>
+                </th>
+                <th class="price-table__item  price-table__item--main">
+                  <span class="price-table__title">Анлим</span>
+                  <span class="price-table__price">9,99 USD</span>
+                </th>
+              </tr>
+              <tr class="price-table__list">
+                <td>Розовый фильтр</td>
+                <td>
+                  <span class="price-table__icon  price-table__icon--done"></span>
+                </td>
+                <td>
+                  <span class="price-table__icon  price-table__icon--done"></span>
+                </td>
+                <td>
+                  <span class="price-table__icon  price-table__icon--done"></span>
+                </td>
+              </tr>
+              <tr class="price-table__list">
+                <td>Смайлики</td>
+                <td>
+                  <span class="price-table__icon  price-table__icon--error"></span>
+                </td>
+                <td>
+                  <span class="price-table__icon  price-table__icon--done"></span>
+                </td>
+                <td>
+                  <span class="price-table__icon  price-table__icon--done"></span>
+                </td>
+              </tr>
+              <tr class="price-table__list">
+                <td>Комментарии</td>
+                <td>
+                  <span class="price-table__icon  price-table__icon--error"></span>
+                </td>
+                <td>
+                  <span class="price-table__icon  price-table__icon--error"></span>
+                </td>
+                <td>
+                  <span class="price-table__icon  price-table__icon--done"></span>
+                </td>
+              </tr>
+            </table>
           </div>
         </div>
         <div class="contacts">
@@ -151,8 +228,22 @@
         </div>
         <div class="map">
           <span class="map__pin"></span>
+          <iframe class="map__source" src="https://yandex.ru/map-widget/v1/-/CBUDFKTC~A" frameborder="0"></iframe>
         </div>
       </div>
     </main>
+    <footer class="page-footer  page-footer--main">
+      <div class="page-footer__wrapper">
+        <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" alt="logo-pink" />
+        <ul class="social-list">
+          <li class="social-list__item  social-list__item--tw"><a href="#">Twitter</a></li>
+          <li class="social-list__item  social-list__item--fb"><a href="#">Facebook</a></li>
+          <li class="social-list__item  social-list__item--you"><a href="#">Youtube</a></li>
+        </ul>
+        <div class="copyright">
+          <a href="#" class="copyright__logo">Разработано</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,5 +1,43 @@
+.site-list {
+  display: none;
+  @media screen and (min-width: $large-screen) {
+    display: block;
+  }
+}
+.site-list__wrapper {
+  @media screen and (min-width: $large-screen) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 620px;
+  }
+}
 .site-list__item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+  background-color: $main-blue;
 
+  @media screen and (min-width: $large-screen) {
+    border-bottom: none;
+    background-color: rgba(40, 54, 69, 0);
+  }
+}
+.site-list__item a {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bolder;
+  color: white;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $large-screen) {
+    text-transform: lowercase;
+    font-weight: lighter;
+  }
+}
+.site-list__item a:hover {
+  cursor: pointer;
 }
 .site-list__item--active {
 
