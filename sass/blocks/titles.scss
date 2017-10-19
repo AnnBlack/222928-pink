@@ -1,3 +1,7 @@
+.titles {
+  margin-bottom: 50px;
+}
+
 .titles__wrapper {
   padding-top: 11px;
   padding-bottom: 10px;
@@ -15,7 +19,7 @@
     font-weight: lighter;
   }
 
-  @media screen and (min-width: $tablet-screen) {
+  @media screen and (min-width: $large-screen) {
     font-size: 50px;
   }
 }
@@ -29,7 +33,7 @@
   }
 }
 
-@media screen and (min-width: $tablet-screen) {
+@media screen and (min-width: $large-screen) {
   .titles__text:last-child {
     width: 50%;
   }

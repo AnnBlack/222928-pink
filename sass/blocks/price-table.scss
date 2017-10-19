@@ -1,23 +1,145 @@
 .price-table {
-  background-color: $main-grey;
+  background-color: $white-grey;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  position: relative;
+
+  @media screen and (min-width: $tablet-screen) {
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.price-table::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -50px;
+  width: 0;
+  height: 0;
+  border-bottom: 50px solid $white-grey;
+  border-left: 320px solid transparent;
+
+  @media screen and (min-width: $tablet-screen) {
+    border-left: 639px solid transparent;
+  }
+
+  @media screen and (min-width: $large-screen) {
+    border-left: 1180px solid transparent;
+  }
 }
 
 .price-table__wrapper {
-  padding: 0 20px;
+  width: 100%;
+  position: relative;
 
   @media screen and (min-width: $large-screen) {
     margin: 0 auto;
     width: 960px;
+    padding: 0 20px;
   }
+}
+
+.price-table__wrapper::before {
+  content: "";
+  display: block;
+  height: 310px;
+  border-left: 1px solid $main-grey;
+  position: absolute;
+  left: 20px;
+
+  @media screen and (min-width: $tablet-screen) {
+    display: none;
+  }
+}
+
+.price-table__wrapper::after {
+  content: "";
+  display: block;
+  height: 310px;
+  border-right: 1px solid $main-grey;
+  position: absolute;
+  top: 0;
+  right: 20px;
+
+  @media screen and (min-width: $tablet-screen) {
+    display: none;
+  }
+}
+
+.price-table__wrapper tbody {
+  display: flex;
+  flex-direction: column;
 }
 
 .price-table__item {
   padding: 20px;
   border: 1px solid $main-grey;
+  background-color: $main-blue;
+
+  @media screen and (min-width: $tablet-screen) {
+    width: 20%;
+  }
 }
 
-.price-table__item--main {
-  background-color: $main-blue;
+.price-table__item:first-child {
+  display: none;
+
+  @media screen and (min-width: $tablet-screen) {
+    display: block;
+    background-color: $white-grey;
+    border: none;
+  }
+}
+
+.price-table__item:nth-child(2) {
+  display: none;
+
+  @media screen and (min-width: $tablet-screen) {
+    display: block;
+  }
+}
+
+.price-table__item:nth-child(3) {
+  width: 100%;
+
+  @media screen and (min-width: $tablet-screen) {
+    width: auto;
+  }
+}
+
+.price-table__item:nth-child(4) {
+  display: none;
+
+  @media screen and (min-width: $tablet-screen) {
+    display: block;
+  }
+}
+
+.price-table__header {
+  display: flex;
+  flex-direction: row;
+}
+
+.price-table__list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 20px 10px 30px;
+  border: 1px solid $main-grey;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.price-table__list td:nth-child(2n) {
+  display: none;
+
+  @media screen and (min-width: $tablet-screen) {
+    display: block;
+  }
 }
 
 .price-table__title,

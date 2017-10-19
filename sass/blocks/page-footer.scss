@@ -12,4 +12,16 @@
   justify-content: space-around;
   padding: 20px;
   margin: 0 auto;
+
+  @media screen and (min-width: $tablet-screen) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: $large-screen) {
+    margin: 0 auto;
+    width: 960px;
+    padding: 70px 20px 70px 20px;
+  }
 }

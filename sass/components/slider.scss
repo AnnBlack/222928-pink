@@ -13,8 +13,8 @@
   z-index: 0;
   transform: ease-in-out 0.5s, opacity ease-in-out 0.5s;
 }
-
-/*#slide1:checked ~ .slider > .slide1,
+/*
+#slide1:checked ~ .slider > .slide1,
 #slide2:checked ~ .slider > .slide2,
 #slide3:checked ~ .slider > .slide3 {
   opacity: 1;
