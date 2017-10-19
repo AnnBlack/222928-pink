@@ -1,6 +1,5 @@
 .contacts__wrapper {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 20px;
 
   @media screen and (min-width: $large-screen) {
     margin: 0 auto;
@@ -12,6 +11,16 @@
   text-align: center;
   font-size: 24px;
   color: $main-blue;
+
+  @media screen and (min-width: $tablet-screen) {
+    padding: 0 50px;
+    font-size: 40px;
+    font-weight: lighter;
+  }
+
+  @media screen and (min-width: $large-screen) {
+    padding: 0 250px;
+  }
 }
 
 .contacts__list {
@@ -20,17 +29,28 @@
   justify-content: center;
   padding: 0 20px;
 
-  @media screen and (min-width: $phone-screen) {
+  @media screen and (min-width: $tablet-screen) {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $large-screen) {
+    flex-wrap: nowrap;
   }
 }
 
 .contacts__item {
-  @media screen and (min-width: $phone-screen) {
-    margin-right: 40px;
-    margin-left: 40px;
+  @media screen and (min-width: $tablet-screen) {
+    width: 40%;
+    margin-right: 20px;
+    margin-left: 20px;
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: $large-screen) {
+  .contacts__item:first-child {
+    order: 1;
   }
 }
 
